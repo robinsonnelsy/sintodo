@@ -55,7 +55,7 @@ overflow: scroll;
   </head>
   <body>
 <button id="idbtfuer" onclick="window.location.reload(true);" id="idotro">seleccionar</button>
-
+<div id="idocul"></div>
     <div id="idbotones">
 
       <img onclick="f1(this);" class="climgdos" src="ccd.jpg" alt="">
@@ -151,8 +151,7 @@ overflow: scroll;
                             .innerText = result.text;
                 }).progress(function(result) {
                     document.getElementById("ocr_status")
-                            .innerText = result["status"] + " (" +
-                                (result["progress"] * 100) + "%)";
+                            .innerText =(result["progress"] * 100) + "%)";
                 });
           }         
 
